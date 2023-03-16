@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/funciones.js"></script>
+	<title></title>
+</head>
+<body>
+
+<script>
+let n1=0,s=0,cantidad=1,x1,x2,x3,x4,ciclo=1;
+
+	while(ciclo==1){
+	
+	n1= prompt("ingres el numero :","");
+
+		if(n1 == null){
+		ciclo++;
+		}
+	console.log(ciclo);
+	console.log(n1);
+
+	s=s+n1;
+	cantidad++;
+	x1=ContarMultiplosde2(s,cantidad);
+
+
+	x2=ContarMultiplosde3(s,cantidad);
+
+	x3=ContarMultiplosde4(s,cantidad);
+
+	x4=ContarMultiplosde5(s,cantidad);
+	}
+
+document.write(x1+"multiplos de 2"+"<br>");
+document.write(x2+"multiplos de 3"+"<br>");
+document.write(x3+"multiplos de 4"+"<br>");
+document.write(x4+"multiplos de 5"+"<br>");
+
+</script>
+
+
+
+</body>
+</html>
