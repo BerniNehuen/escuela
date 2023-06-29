@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<script src="js/tarea30.js"></script>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+</head>
+<body>
+<script>
+
+let nombre,ingreso,direccion,salario;
+
+nombre=prompt("Ingrese el nombre : ","");
+ingreso=prompt("Ingrese el año de ingreso : ","");
+direccion=prompt("Ingrese la direccion : ","");
+salario=prompt("Ingrese el salario : ","");
+
+
+persona =new CEmpleado(nombre,ingreso,direccion,salario);
+
+document.write(persona.mostrardatos());
+
+</script>
+</body>
+</html>
