@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<script src="js/tarea31.js"></script>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+</head>
+<body>
+<script>
+
+let nombre,fechadenacimiento,dni,genero,peso,altura;
+
+nombre=prompt("Ingrese el nombre : ","");
+fechadenacimiento=prompt("Ingrese la fechadenacimiento formato: dd/mm/yyyy","");
+dni=prompt("Ingrese el dni: ","");
+genero=prompt("Ingrese el genero(M,F,O) : ","");
+peso=parseInt(prompt("ingrese su peso en kilogramos : ",""));
+altura=parseInt(prompt("ingrese su altura en centimetros : ",""));
+
+persona =new CPersona(nombre,fechadenacimiento,dni,genero,peso,altura);
+
+document.write(persona.calcularIMC()+"<br>"+persona.ComprobarGenero()+"<br"+persona.EsMayorDeEdad());
+
+</script>
+
+
+</html>
